@@ -1,14 +1,13 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://omidshenavar.github.io/
 languageCode: en-us
 build:
   writeStats: true
+
 params:
-  title: aafu theme
-  author: Darshan Baral
-  description: Website title
-  copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+  title: Omid Shenavar - Academic Resume
+  author: Omid Shenavar
+  description: Omid Shenavar's Academic Resume Website
+  copyright:  "Powered by ♥[Hugo](https://gohugo.io/)♥"
   theme:
     mainTheme: dark
     showAttribute: true
@@ -24,80 +23,65 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "Omid Shenavar"
+    tagline: "Plant Pathologist"
+    location: "Shiraz, Iran"
     photo: profile.jpg
   social:
-    title: Links
+    title: Academic Profiles
     list:
-      - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
-      - icon: fab fa-github
-        url: "#"
-        title: GitHub
-      - icon: fab fa-twitter
-        url: "#"
-        title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
+      - icon: ai ai-orcid
+        url: "https://orcid.org/0000-0003-2297-8352"
+        title: ORCID
+      - icon: ai ai-researchgate
+        url: "https://www.researchgate.net/profile/Omid-Shenavar"
         title: ResearchGate
+      - icon: ai ai-google-scholar
+        url: "https://scholar.google.com/citations?user=Uvse3ykAAAAJ&hl=en&oi=ao"
+        title: Google Scholar
+      - icon: fab fa-linkedin-in
+        url: "https://ir.linkedin.com/in/omid-shenavar-46702496"
+        title: LinkedIn
+      - icon: fab fa-github
+        url: "https://github.com/omidshenavar"
+        title: GitHub
   showInAccordion:
     - item: aboutme
       expand: true
-    - item: experience
     - item: education
+    - item: experience
     - item: publication
-    - item: project
     - item: skill
     - item: hobby
+    - item: contactme  # Add this new entry
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
-  experience:
-    title: Experiences
-    icon: fas fa-briefcase
-    list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
-        details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+    description: >
+      I'm a passionate M.Sc. graduate in phytobacteriology from SANRU university. Since then, I've been continuously expanding my knowledge in various aspects of my field, particularly bioinformatics. Currently, I work as a manager in a pharmacy, but I'm eager to find a position in phytobacteriology that allows me to push past my limits, which has been a driving force throughout my life and career.
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      - degree: M.Sc. in Plant Protection (Phytobacteriology)
+        college: Sari Agricultural Sciences and Natural Resources University
+        dates: September 2014 - September 2017
+        # Add more details about your master's degree if desired
+      - degree: B.Sc. in Plant Protection
+        college: Shiraz University
+        dates: September 2010 - August 2014
+        # Add more details about your bachelor's degree if desired
+  experience:
+    title: Professional Experience
+    icon: fas fa-briefcase
+    list:
+      - position: Manager
+        company: Dr. Ghassami Pharmacy
+        dates: 2019 - Present
+        details: |
+          - Manage daily operations and staff.
+          - Ensure compliance with regulations.
+          - Provide excellent customer service.
   publication:
     title: Publications
     icon: fas fa-book
@@ -108,63 +92,93 @@ params:
       - journal
     types:
       - Journal Articles
-      - Proceedings
+      - Conference Papers
     list:
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
+      - title: "Characterization of Xanthomonas hortorum isolates causing leaf spot on Primula vulgaris"
+        authors: "Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar"
+        date: "July 2023"
+        journal: "Plant Pathology"
+        url: "http://dx.doi.org/10.1111/ppa.13782"
         type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
+      - title: "Multi Locus Sequence Analysis of Candidatus liberibacter asiaticus Isolates in Iran"
+        authors: "Omid Shenavar, Siavash Samavi, Mohammad Mehdi Faghihi, Abdolnabi Bagheri, Valiollah Babaeizad, Mohsen Amiri Mazraie"
+        date: "2022"
+        journal: "24th Iranian Plant Protection Congress"
+        url: https://24ippc.areeo.ac.ir/paper?manu=8328
+        type: Conference Papers
+      - title: "Investigation of Pathogenicity and Molecular Characteristics of Staphylococcus Strains Causing Bacterial Canker in Central Iran"
+        authors: "Omid Shenavar, Esmaeil Asadi, Heshmatolah Rahimian, Valiollah Babaeizad, S. Mohamad Alavi"
         date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
+        journal: "Proceedings of the International Congress of Science and Engineering"
+        url: "https://civilica.com/doc/755249"
+        type: Conference Papers
+      - title: "Isolation, Identification, and Phenotypic-Biochemical Characterization of Staphylococcus warneri Strains, the Causative Agents of Bacterial Canker in Iran"
+        authors: "Omid Shenavar, Esmaeil Asadi, Heshmatolah Rahimian, Valiollah Babaeizad, S. Mohamad Alavi"
+        date: "2018"
+        journal: "Proceedings of the International Congress of Science and Engineering"
+        url: "https://civilica.com/doc/755250"
+        type: Conference Papers
+      - title: "Phenotypic, Molecular, and Pathogenicity Investigation of Xanthomonas Strains Causing Primula Leaf Spot"
+        authors: "Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar"
+        date: "2017"
+        journal: "First International Symposium on Applied Research in Agricultural Sciences, Natural Resources, and Environment"
+        url: "https://civilica.com/doc/673977"
+        type: Conference Papers
+      - title: "First report of leaf spot caused by Colletotrichum coccodes on Viola tricolor in Iran."
+        authors: "T. Karamnejadi, A. Solhizadeh, O. Shenavar, M.A. Tajick-Ghanbari, others"
+        date: "2017"
+        journal: "Journal of Plant Pathology"
+        volume: "99"
+        number: "2"
+        url: "https://www.sipav.org/en/16/Archive/3858"
         type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
-  project:
-    title: Projects
-    icon: fas fa-project-diagram
-    list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+      - title: "Molecular Identification and Taxonomic Position of Xanthomonas Strains Causing Bacterial Leaf Spot in Primula Based on gltA Gene Sequence Analysis"
+        authors: "Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar"
+        date: "2017"
+        journal: "First International Symposium on Applied Research in Agricultural Sciences, Natural Resources, and Environment"
+        url: "https://civilica.com/doc/673976"
+        type: Conference Papers
+      - title: "Computerized Interactive Keys for Identification of Fungi"
+        authors: "Omid Shenavar, Mostowfizadeh-Ghalamfarsa Reza"
+        date: "2015"
+        journal: "Plant Pathology Science"
+        volume: "4"
+        number: "2"
+        url: "http://yujs.yu.ac.ir/pps/article-1-90-en.html"
+        type: Journal Articles
+
   skill:
-    title: Skills
+    title: Skills and Languages
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
-        skillrating: 90
-      - skill: Skill 3
+      - skill: English (IELTS Holder with Score 8.0)
         skillrating: 80
-      - skill: Skill 4
-        skillrating: 50
+      - skill: Phytopathology
+        skillrating: 90
+      - skill: Molecular Phylogeny
+        skillrating: 80
+      - skill: Phylogenetic Analysis
+        skillrating: 80
+      - skill: Bioinformatics
+        skillrating: 80
+      - skill: Research Methodology
+        skillrating: 85
   hobby:
-    title: Hobbies
+    title: Hobbies and Interests
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+    - hobby: Physical Fitness (Gym)
+      icon: fas fa-dumbbell
+    - hobby: Cinema and Movies
+      icon: fas fa-film
+    - hobby: "Reading Books (Favorite: A Fraction of the Whole by Steve Toltz)"
+      icon: fas fa-book
+    - hobby: Linux Enthusiast (Fedora)
+      icon: fab fa-fedora
+  contactme:
+    title: Contact Me
+    icon: fas fa-envelope
+    description: >
+        Feel free to reach out to me via email:
+        [<i class="fas fa-envelope"></i> shenavar.omid@gmail.com](mailto:shenavar.omid@gmail.com)
