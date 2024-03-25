@@ -155,15 +155,15 @@ params:
       - skill: English (IELTS Holder with Score 8.0)
         skillrating: 80
       - skill: Phytopathology
-        skillrating: 90
+        skillrating: 75
       - skill: Molecular Phylogeny
         skillrating: 80
       - skill: Phylogenetic Analysis
-        skillrating: 80
+        skillrating: 85
       - skill: Bioinformatics
         skillrating: 80
       - skill: Research Methodology
-        skillrating: 85
+        skillrating: 90
   hobby:
     title: Hobbies and Interests
     icon: fas fa-gamepad
