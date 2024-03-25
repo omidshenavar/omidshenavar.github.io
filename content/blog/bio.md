@@ -35,8 +35,6 @@ img {
 
 ## Contact Me
 
-Feel free to reach out to me via email:
-
 [![Email](https://img.icons8.com/fluency/48/000000/gmail.png)](mailto:shenavar.omid@gmail.com)
 
 <!--more-->
