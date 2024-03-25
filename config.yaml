@@ -7,7 +7,7 @@ params:
   title: Omid Shenavar - Academic Resume
   author: Omid Shenavar
   description: Omid Shenavar's Academic Resume Website
-  copyright:  "Powered by ♥[Hugo](https://gohugo.io/)♥"
+  copyright:  "Powered by [Hugo](https://gohugo.io/)"
   theme:
     mainTheme: dark
     showAttribute: true
