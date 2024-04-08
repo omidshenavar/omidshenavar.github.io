@@ -99,3 +99,43 @@ p {
 .text-justify {
   text-align: justify;
 }
+
+.testimonial-container {
+  border: 2px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.testimonial-image {
+  margin-left: 20px;
+}
+
+.testimonial-image img {
+  max-width: 150px;
+  border: 5px solid #ddd;
+  cursor: pointer;
+}
+
+.testimonial-image img:active {
+  max-width: 100%;
+}
+
+.testimonial-text {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  flex: 1;
+}
+
+.testimonial-text p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.testimonial-text p:first-of-type:first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+}
