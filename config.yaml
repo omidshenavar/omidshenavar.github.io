@@ -63,7 +63,7 @@ params:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: M.Sc. in Plant Protection (Phytobacteriology)
+      - degree: M.Sc. in Plant Pathology (Phytobacteriology)
         college: Sari Agricultural Sciences and Natural Resources University
         dates: September 2014 - September 2017
         # Add more details about your master's degree if desired
