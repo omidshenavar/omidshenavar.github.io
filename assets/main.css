@@ -90,11 +90,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+  font-family: 'Playfair Display', serif;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif; /* Primary font for paragraphs */
+  font-family: 'Roboto', sans-serif; /* Primary font for paragraphs */
 }
 .text-justify {
   text-align: justify;
@@ -123,7 +123,7 @@ p {
 }
 
 .testimonial-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya', serif;
   text-align: justify;
   flex: 1;
 }
