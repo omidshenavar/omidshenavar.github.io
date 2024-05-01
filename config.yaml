@@ -45,6 +45,9 @@ params:
       - icon: fab fa-github
         url: "https://github.com/omidshenavar"
         title: GitHub
+      - icon: fas fa-bold  # Add this new entry
+        url: "https://your-bluesky.profile-url"
+        title: Bluesky
   showInAccordion:
     - item: aboutme
       expand: true
@@ -53,7 +56,8 @@ params:
     - item: publication
     - item: skill
     - item: hobby
-    - item: contactme  # Add this new entry
+    - item: contactme
+    - item: downloadcv  # Add this new entry
   aboutme:
     title: About Me
     icon: fas fa-user
@@ -182,7 +186,7 @@ params:
     description: >
         Feel free to reach out to me via email:
         [<i class="fas fa-envelope"></i> shenavar.omid@gmail.com](mailto:shenavar.omid@gmail.com)
-  downloadcv:
+    downloadcv:
     title: Download My C.V.
     icon: fas fa-download
     description: >
