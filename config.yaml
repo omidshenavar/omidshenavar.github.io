@@ -182,3 +182,9 @@ params:
     description: >
         Feel free to reach out to me via email:
         [<i class="fas fa-envelope"></i> shenavar.omid@gmail.com](mailto:shenavar.omid@gmail.com)
+  downloadcv:
+    title: Download My C.V.
+    icon: fas fa-download
+    description: >
+        You can download my up-to-date CV from the following link:
+        [Download CV (PDF)](/cv/cv.pdf)
