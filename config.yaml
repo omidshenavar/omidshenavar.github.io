@@ -46,7 +46,7 @@ params:
         url: "https://github.com/omidshenavar"
         title: GitHub
       - icon: fas fa-bold  # Add this new entry
-        url: "https://your-bluesky.profile-url"
+        url: "https://bsky.app/profile/omidshenavar.bsky.social"
         title: Bluesky
   showInAccordion:
     - item: aboutme
