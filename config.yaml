@@ -105,19 +105,19 @@ params:
         url: "http://dx.doi.org/10.1111/ppa.13782"
         type: Journal Articles
       - title: "Multi Locus Sequence Analysis of Candidatus liberibacter asiaticus Isolates in Iran"
-        authors: "Omid Shenavar, Siavash Samavi, Mohammad Mehdi Faghihi, Abdolnabi Bagheri, Valiollah Babaeizad, Mohsen Amiri Mazraie"
+        authors: "Siavash Samavi, Mohammad Mehdi Faghihi, Abdolnabi Bagheri, Valiollah Babaeizad, Omid Shenavar, Mohsen Amiri Mazraie"
         date: "2022"
         journal: "24th Iranian Plant Protection Congress"
         url: https://24ippc.areeo.ac.ir/paper?manu=8328
         type: Conference Papers
       - title: "Investigation of Pathogenicity and Molecular Characteristics of Staphylococcus Strains Causing Bacterial Canker in Central Iran"
-        authors: "Omid Shenavar, Esmaeil Asadi, Heshmatolah Rahimian, Valiollah Babaeizad, S. Mohamad Alavi"
+        authors: "Esmaeil Asadi, Heshmatolah Rahimian, Omid Shenavar, Valiollah Babaeizad, S. Mohamad Alavi"
         date: "2018"
         journal: "Proceedings of the International Congress of Science and Engineering"
         url: "https://civilica.com/doc/755249"
         type: Conference Papers
       - title: "Isolation, Identification, and Phenotypic-Biochemical Characterization of Staphylococcus warneri Strains, the Causative Agents of Bacterial Canker in Iran"
-        authors: "Omid Shenavar, Esmaeil Asadi, Heshmatolah Rahimian, Valiollah Babaeizad, S. Mohamad Alavi"
+        authors: "Esmaeil Asadi, Heshmatolah Rahimian, Omid Shenavar, Valiollah Babaeizad, S. Mohamad Alavi"
         date: "2018"
         journal: "Proceedings of the International Congress of Science and Engineering"
         url: "https://civilica.com/doc/755250"
@@ -129,7 +129,7 @@ params:
         url: "https://civilica.com/doc/673977"
         type: Conference Papers
       - title: "First report of leaf spot caused by Colletotrichum coccodes on Viola tricolor in Iran."
-        authors: "T. Karamnejadi, A. Solhizadeh, O. Shenavar, M.A. Tajick-Ghanbari, others"
+        authors: "T. Karamnejadi, A. Solhizadeh, O. Shenavar, M.A. Tajick-Ghanbari"
         date: "2017"
         journal: "Journal of Plant Pathology"
         volume: "99"
@@ -156,7 +156,7 @@ params:
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: English (IELTS Holder with Score 8.0)
+      - skill: English
         skillrating: 80
       - skill: Phytopathology
         skillrating: 75
@@ -166,6 +166,8 @@ params:
         skillrating: 85
       - skill: Bioinformatics
         skillrating: 80
+      - skill: Python
+        skillrating: 45        
       - skill: Research Methodology
         skillrating: 90
   hobby:
