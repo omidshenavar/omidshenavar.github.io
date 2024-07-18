@@ -85,6 +85,7 @@
     @apply bg-gray-300 pointer-events-none text-gray-800;
   }
 }
+
 body {
   font-family: 'Roboto', sans-serif; /* Primary font */
 }
@@ -96,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Roboto', sans-serif; /* Primary font for paragraphs */
 }
+
 .text-justify {
   text-align: justify;
 }
@@ -138,4 +140,30 @@ p {
   float: left;
   margin-right: 5px;
   line-height: 1;
+}
+
+/* Custom CSS for responsive menu */
+@media (min-width: 768px) {
+  #nav-links {
+    display: flex !important;
+  }
+  #menu-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav-links.hidden {
+    display: none !important;
+  }
+  #nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
