@@ -62,7 +62,7 @@ params:
     title: About Me
     icon: fas fa-user
     description: >
-      I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in <em>Xanthomonas</em> species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
+      I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in *Xanthomonas* species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
   education:
     title: Education
     icon: fas fa-graduation-cap
@@ -71,7 +71,7 @@ params:
         college: Sari Agricultural Sciences and Natural Resources University (SANRU)
         dates: September 2014 - September 2017
         details: |
-          - Studied under Professor Heshmat Rahimian, focusing on plant pathogenic bacteria.
+          - Studied under Professor Heshmat Rahimian supervision, focusing on plant pathogenic bacteria.
           - Contributed to the Plant Pathology Association magazine.
       - degree: B.Sc. in Plant Protection
         college: Shiraz University
