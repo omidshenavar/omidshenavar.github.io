@@ -24,7 +24,7 @@ params:
 
   profile:
     name: "Omid Shenavar"
-    tagline: "Plant Pathologist"
+    tagline: "Plant Pathologist & Bioinformatician"
     location: "Shiraz, Iran"
     photo: profile.jpg
   social:
@@ -45,7 +45,7 @@ params:
       - icon: fab fa-github
         url: "https://github.com/omidshenavar"
         title: GitHub
-      - icon: fas fa-bold  # Add this new entry
+      - icon: fas fa-bold
         url: "https://bsky.app/profile/omidshenavar.bsky.social"
         title: Bluesky
   showInAccordion:
@@ -57,35 +57,48 @@ params:
     - item: skill
     - item: hobby
     - item: contactme
-    - item: downloadcv  # Add this new entry
+    - item: downloadcv
   aboutme:
     title: About Me
     icon: fas fa-user
     description: >
-      I'm a passionate M.Sc. graduate in phytobacteriology from SANRU university. Since then, I've been continuously expanding my knowledge in various aspects of my field, particularly bioinformatics. Currently, I work as a manager in a pharmacy, but I'm eager to find a position in phytobacteriology that allows me to push past my limits, which has been a driving force throughout my life and career.
+      I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in Xanthomonas species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
       - degree: M.Sc. in Plant Pathology (Phytobacteriology)
-        college: Sari Agricultural Sciences and Natural Resources University
+        college: Sari Agricultural Sciences and Natural Resources University (SANRU)
         dates: September 2014 - September 2017
-        # Add more details about your master's degree if desired
+        details: |
+          - Studied under Professor Heshmat Rahimian, focusing on plant pathogenic bacteria.
+          - Contributed to the Plant Pathology Association magazine.
       - degree: B.Sc. in Plant Protection
         college: Shiraz University
         dates: September 2010 - August 2014
-        # Add more details about your bachelor's degree if desired
+        details: |
+          - Member of the Editorial Board of the Plant Protection Association.
+          - Coordinated the Scientific Seminar on Evolution.
   experience:
     title: Professional Experience
     icon: fas fa-briefcase
     list:
-      - position: Manager
+      - position: Pharmacy Manager
         company: Dr. Ghassami Pharmacy
         dates: 2019 - Present
         details: |
-          - Manage daily operations and staff.
-          - Ensure compliance with regulations.
-          - Provide excellent customer service.
+          - Manage operations, staff training, and ensure health regulation compliance.
+          - Implement process improvements for customer satisfaction.
+      - position: Freelance Writer, Consultant, and Translator
+        dates: 2017 - Present
+        details: |
+          - Provide consulting, writing, and bioinformatics analyses for academic projects.
+          - Translate scientific manuscripts for international journal publications.
+      - position: IT Support Assistant (Student Employment)
+        company: SANRU
+        dates: 2014 - 2016
+        details: |
+          - Supported university IT operations, troubleshooting hardware and software.
   publication:
     title: Publications
     icon: fas fa-book
@@ -150,47 +163,50 @@ params:
         number: "2"
         url: "http://yujs.yu.ac.ir/pps/article-1-90-en.html"
         type: Journal Articles
-
   skill:
     title: Skills and Languages
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: English
-        skillrating: 80
-      - skill: Phytopathology
-        skillrating: 75
       - skill: Molecular Phylogeny
         skillrating: 80
-      - skill: Phylogenetic Analysis
-        skillrating: 85
-      - skill: Bioinformatics
+      - skill: Bioinformatics & MLSA
         skillrating: 80
-      - skill: Python
-        skillrating: 45        
-      - skill: Research Methodology
-        skillrating: 90
+      - skill: Pathogenicity Assays
+        skillrating: 75
+      - skill: Laboratory Techniques (PCR, DNA/Protein Extraction)
+        skillrating: 80
+      - skill: Python & R Programming
+        skillrating: 60
+      - skill: Linux & Open Source
+        skillrating: 80
+      - skill: Scientific Writing & Editing
+        skillrating: 85
+      - skill: Project Management & Leadership
+        skillrating: 80
+      - skill: English (IELTS 7.5)
+        skillrating: 75
   hobby:
     title: Hobbies and Interests
     icon: fas fa-gamepad
     list:
-    - hobby: Physical Fitness (Gym)
-      icon: fas fa-dumbbell
-    - hobby: Cinema and Movies
-      icon: fas fa-film
-    - hobby: "Reading Books (Favorite: A Fraction of the Whole by Steve Toltz)"
-      icon: fas fa-book
-    - hobby: Linux Enthusiast (Fedora)
-      icon: fab fa-fedora
+      - hobby: Physical Fitness (Gym)
+        icon: fas fa-dumbbell
+      - hobby: Cinema and Movies
+        icon: fas fa-film
+      - hobby: "Reading Books (Favorite: A Fraction of the Whole by Steve Toltz)"
+        icon: fas fa-book
+      - hobby: Linux Enthusiast (Fedora)
+        icon: fab fa-fedora
   contactme:
     title: Contact Me
     icon: fas fa-envelope
     description: >
-        Feel free to reach out to me via email:
+        Feel free to reach out via email:
         [<i class="fas fa-envelope"></i> shenavar.omid@gmail.com](mailto:shenavar.omid@gmail.com)
   downloadcv:
     title: Download my CV
     icon: fas fa-download
     description: >
-        You can download my up-to-date CV from the following link:
+        Download my up-to-date CV here:
         [Download CV (PDF)](/cv/CV.pdf)
