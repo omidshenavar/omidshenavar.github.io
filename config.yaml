@@ -62,7 +62,7 @@ params:
     title: About Me
     icon: fas fa-user
     description: >
-      I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in Xanthomonas species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
+      I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in <em>Xanthomonas</em> species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
   education:
     title: Education
     icon: fas fa-graduation-cap
