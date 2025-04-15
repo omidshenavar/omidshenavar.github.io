@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on </title>
+    <link>https://omidshenavar.github.io/tags/python/</link>
+    <description>Recent content in Python on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://omidshenavar.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drug Insurance Status Checker</title>
+      <link>https://omidshenavar.github.io/apps/drug-insurance-checker/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/drug-insurance-checker/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A Python app for checking drug insurance status in Naft and Janbaz databases, displaying details like drug name and insurance status.&#xA;Technologies Tkinter SQLite ttkbootstrap </description>
+    </item>
+    <item>
+      <title>Grade Viewer V 0.1</title>
+      <link>https://omidshenavar.github.io/apps/grade-viewer/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/grade-viewer/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A simple Python app for viewing grades from an online Excel file. Includes user login, grade display, and logout functionality.&#xA;Technologies PyQt5 Pandas Requests </description>
+    </item>
+    <item>
+      <title>Invoice Management System</title>
+      <link>https://omidshenavar.github.io/apps/invoice-management-system/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/invoice-management-system/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A Python-based application for Dr. Ghasemi’s Pharmacy to streamline invoice handling. Features include adding invoices with a Persian calendar, auto-complete for company names, database storage, advanced search, and Excel export.&#xA;Technologies PyQt5 SQLite3 Pandas Openpyxl Numpy </description>
+    </item>
+  </channel>
+</rss>

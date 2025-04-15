@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on </title>
+    <link>https://omidshenavar.github.io/tags/c%23/</link>
+    <description>Recent content in C# on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://omidshenavar.github.io/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Special Medicine Management</title>
+      <link>https://omidshenavar.github.io/apps/special-medicine-management/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/special-medicine-management/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A C# application for managing special medicine records in pharmacies. Features Persian date picker, auto-complete, SQLite storage, advanced search, and Excel export with RTL support.&#xA;Technologies .NET Windows Forms SQLite ClosedXML </description>
+    </item>
+  </channel>
+</rss>

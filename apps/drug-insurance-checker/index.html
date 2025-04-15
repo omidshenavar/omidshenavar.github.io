@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head>
+  <title>Omid Shenavar - Academic Resume</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Omid Shenavar&#39;s Academic Resume Website" />
+<meta name="author" content="Omid Shenavar" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.126.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+
+
+<link href="/main.min.394f6656282e37596be9ebcbc9cae2580ad8435d57070d1d412a4855844b440e.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header class="nav flex flex-row items-center py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between">
+  <div class="flex flex-row items-center">
+    
+    <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    
+    <div id="nav-links" class="hidden md:flex flex-row fixed md:static top-0 left-0 h-full w-64 bg-stone-50 dark:bg-darkest md:bg-transparent md:dark:bg-transparent transform -translate-x-full md:transform-none transition-transform duration-300 ease-in-out z-50">
+      <div class="flex flex-col md:flex-row w-full">
+        
+        <button id="menu-close" class="md:hidden p-4 text-right">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/">Home</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">whoamI?</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/testimonials">Testimonials</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/apps">Apps</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <i class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0" onclick="lightDark(this)"></i>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuClose = document.getElementById('menu-close');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.remove('hidden');
+    navLinks.classList.toggle('translate-x-0');
+    navLinks.classList.toggle('-translate-x-full');
+  });
+
+  menuClose.addEventListener('click', () => {
+    navLinks.classList.toggle('translate-x-0');
+    navLinks.classList.toggle('-translate-x-full');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth < 768) {
+      navLinks.classList.remove('translate-x-0');
+      navLinks.classList.add('-translate-x-full');
+    }
+  });
+
+  
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      navLinks.classList.remove('translate-x-0', '-translate-x-full', 'hidden');
+    } else {
+      navLinks.classList.add('-translate-x-full');
+      navLinks.classList.add('hidden');
+    }
+  });
+
+  
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+    <div class="mb-3">
+        <h1 class="top-h1" style="font-size: 2.75em">Drug Insurance Status Checker</h1>
+        <p class="mb-1">July 17, 2024</p>
+    </div>
+    <div class="content" style="text-align: justify;">
+        
+
+<video width="100%" controls>
+    <source src="/videos/2.webm" type="video/webm">
+    Your browser does not support the video tag.
+</video>
+
+<h3 id="description">Description</h3>
+<p>A Python app for checking drug insurance status in Naft and Janbaz databases, displaying details like drug name and insurance status.</p>
+<h3 id="technologies">Technologies</h3>
+<ul>
+<li>Tkinter</li>
+<li>SQLite</li>
+<li>ttkbootstrap</li>
+</ul>
+
+    </div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/apps/grade-viewer/"
+      title="Grade Viewer V 0.1"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <a
+      href="/apps/special-medicine-management/"
+      title="Special Medicine Management"
+    >
+      <i class="nav-menu fas fa-chevron-circle-right"></i>
+    </a>
+    
+  </h3>
+</div>
+
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">Powered by <a href="https://gohugo.io/">Hugo</a></p>
+  <p >
+    <p style="font-size: 10px;">
+        based on 
+        <a href="https://github.com/darshanbaral/aafu">
+          aafu theme
+        </a>
+      created by
+      <a href="https://www.darshanbaral.com/">
+        darshan
+      </a>
+    </p>
+</footer>
+
+    
+  </body>
+</html>

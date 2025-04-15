@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Omid Shenavar - Academic Resume</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Omid Shenavar&#39;s Academic Resume Website" />
+<meta name="author" content="Omid Shenavar" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.126.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header class="nav flex flex-row items-center py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between">
+  <div class="flex flex-row items-center">
+    
+    <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <div id="nav-links" class="hidden md:flex flex-row">
+      <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+      <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">whoamI?</a>
+      <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/testimonials">Testimonials</a>
+      <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/apps">Apps</a>
+    </div>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+
+  
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('hidden');
+  });
+</script>
+
+    
+    <main class="grow">
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+    <div class="mb-3">
+        <h1 class="top-h1" style="font-size: 2.75em">Python Apps</h1>
+        <p class="mb-1">July 17, 2024</p>
+    </div>
+    <div class="content" style="text-align: justify;">
+        <h2 id="invoice-management-system">Invoice Management System</h2>
+
+ 
+
+<video width="100%" controls>
+    <source src="/videos/3.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+
+<h3 id="description">Description</h3>
+<p>Introducing the Invoice Management System for Dr. Ghasemi&rsquo;s Pharmacy. This application streamlines invoice handling with ease and efficiency. Key features include:</p>
+<ul>
+<li>Add new invoices quickly with an intuitive form</li>
+<li>Select the invoice date using a Persian calendar widget</li>
+<li>Auto-complete suggestions for company names and file cabinet zones</li>
+<li>Save invoice details directly to the database</li>
+<li>Search for invoices by company name, number, status, and date range</li>
+<li>View search results in a detailed table format</li>
+<li>Double-click to update or delete invoice records</li>
+<li>Export search results to Excel for backup and reporting</li>
+<li>Generate comprehensive reports on company statistics</li>
+<li>Easily export report data to Excel</li>
+<li>Access help and about sections for user guidance</li>
+<li>Understand the application&rsquo;s creation and developer contact details</li>
+</ul>
+<h3 id="technologies-used">Technologies Used</h3>
+<ul>
+<li>PyQt5 for a robust and user-friendly interface</li>
+<li>SQLite3 for efficient database management</li>
+<li>Pandas and Openpyxl for data manipulation and export</li>
+<li>Numpy for fast numerical operations</li>
+</ul>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li>Optimized for smooth performance on all systems</li>
+<li>A comprehensive tool for managing pharmacy invoices</li>
+<li>Ensure accuracy and efficiency in your invoice handling</li>
+<li>Save time and reduce errors with our tailored solution</li>
+</ul>
+<hr>
+<h2 id="grade-viewer-v-01">Grade Viewer V 0.1</h2>
+
+ 
+
+<video width="100%" controls>
+    <source src="/videos/1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+
+<h3 id="description-1">Description</h3>
+<p>Grade Viewer V 0.1 is a simple application for viewing grades stored in an Excel file. This application features:</p>
+<ul>
+<li>Login with username and password</li>
+<li>Fetches grades from an online Excel file</li>
+<li>Displays grades for the provided username and password</li>
+<li>Logout option to clear the current session</li>
+</ul>
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+<li>Python 3.6 or higher</li>
+<li>PyQt5</li>
+<li>Pandas</li>
+<li>Requests</li>
+</ul>
+<hr>
+<h2 id="drug-insurance-status-checker">Drug Insurance Status Checker</h2>
+
+ 
+
+<video width="100%" controls>
+    <source src="/videos/2.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+
+<h3 id="description-2">Description</h3>
+<p>Drug Insurance Status Checker is an application to check the insurance status of drugs for a drugstore. This application features:</p>
+<ul>
+<li>Search in Naft and Janbaz databases</li>
+<li>Display results with details like drug name, generic code, and insurance status</li>
+<li>Important notes for Janbaz database</li>
+</ul>
+<h3 id="dependencies-1">Dependencies</h3>
+<ul>
+<li>Python 3.6 or higher</li>
+<li>Tkinter</li>
+<li>SQLite</li>
+<li>ttkbootstrap</li>
+</ul>
+<hr>
+
+    </div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/apps/drug-insurance-checker/"
+      title=""
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">Powered by <a href="https://gohugo.io/">Hugo</a></p>
+  <p >
+    <p style="font-size: 10px;">
+        based on 
+        <a href="https://github.com/darshanbaral/aafu">
+          aafu theme
+        </a>
+      created by
+      <a href="https://www.darshanbaral.com/">
+        darshan
+      </a>
+    </p>
+</footer>
+
+    
+  </body>
+</html>

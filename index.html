@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head>
+  <title>Omid Shenavar - Academic Resume</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Omid Shenavar&#39;s Academic Resume Website" />
+<meta name="author" content="Omid Shenavar" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.126.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+
+
+<link href="/main.min.394f6656282e37596be9ebcbc9cae2580ad8435d57070d1d412a4855844b440e.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header class="nav flex flex-row items-center py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between">
+  <div class="flex flex-row items-center">
+    
+    <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    
+    <div id="nav-links" class="hidden md:flex flex-row fixed md:static top-0 left-0 h-full w-64 bg-stone-50 dark:bg-darkest md:bg-transparent md:dark:bg-transparent transform -translate-x-full md:transform-none transition-transform duration-300 ease-in-out z-50">
+      <div class="flex flex-col md:flex-row w-full">
+        
+        <button id="menu-close" class="md:hidden p-4 text-right">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/">Home</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">whoamI?</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/testimonials">Testimonials</a>
+        <a class="no-underline p-4 md:p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/apps">Apps</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <i class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0" onclick="lightDark(this)"></i>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuClose = document.getElementById('menu-close');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.remove('hidden');
+    navLinks.classList.toggle('translate-x-0');
+    navLinks.classList.toggle('-translate-x-full');
+  });
+
+  menuClose.addEventListener('click', () => {
+    navLinks.classList.toggle('translate-x-0');
+    navLinks.classList.toggle('-translate-x-full');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth < 768) {
+      navLinks.classList.remove('translate-x-0');
+      navLinks.classList.add('-translate-x-full');
+    }
+  });
+
+  
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      navLinks.classList.remove('translate-x-0', '-translate-x-full', 'hidden');
+    } else {
+      navLinks.classList.add('-translate-x-full');
+      navLinks.classList.add('hidden');
+    }
+  });
+
+  
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/profile.jpg"
+    alt="Omid Shenavar"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Omid Shenavar</h1>
+<h2 class="mb-0">Plant Pathologist &amp; Bioinformatician</h2>
+<h3 class="mb-4">Shiraz, Iran</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://orcid.org/0000-0003-2297-8352">
+      <i class="mt-1 ai ai-orcid"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.researchgate.net/profile/Omid-Shenavar">
+      <i class="mt-1 ai ai-researchgate"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://scholar.google.com/citations?user=Uvse3ykAAAAJ&amp;hl=en&amp;oi=ao">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://ir.linkedin.com/in/omid-shenavar-46702496">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/omidshenavar">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://bsky.app/profile/omidshenavar.bsky.social">
+      <i class="mt-1 fas fa-bold"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify">Powered by <a href="https://gohugo.io/">Hugo</a></p>
+  <p >
+    <p style="font-size: 10px;">
+        based on 
+        <a href="https://github.com/darshanbaral/aafu">
+          aafu theme
+        </a>
+      created by
+      <a href="https://www.darshanbaral.com/">
+        darshan
+      </a>
+    </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify text-justify">
+  I am a passionate plant pathologist specializing in bacterial pathogens, with expertise in <em>Xanthomonas</em> species. My work spans bioinformatics, molecular phylogeny, and plant-microbe interactions. I currently manage a pharmacy while consulting in research and translation, supporting students and researchers with bioinformatics analyses, scientific writing, and translations for international journals.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">M.Sc. in Plant Pathology (Phytobacteriology)</h4>
+<p >September 2014 - September 2017 &middot; Sari Agricultural Sciences and Natural Resources University (SANRU)</p>
+
+
+
+<h4 style="text-decoration: underline;">B.Sc. in Plant Protection</h4>
+<p >September 2010 - August 2014 &middot; Shiraz University</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Professional Experience</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Pharmacy Manager</h4>
+<p class="mb-0">
+  2019 - Present &middot;  Dr. Ghassami Pharmacy 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Manage operations, staff training, and ensure health regulation compliance.</li>
+<li>Implement process improvements for customer satisfaction.</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Freelance Writer, Consultant, and Translator</h4>
+<p class="mb-0">
+  2017 - Present &middot;   
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Provide consulting, writing, and bioinformatics analyses for academic projects.</li>
+<li>Translate scientific manuscripts for international journal publications.</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">IT Support Assistant (Student Employment)</h4>
+<p class="mb-0">
+  2014 - 2016 &middot;  SANRU 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Supported university IT operations, troubleshooting hardware and software.</li>
+</ul>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">July 2023.
+
+
+<a href="http://dx.doi.org/10.1111/ppa.13782">
+  <em>Characterization of Xanthomonas hortorum isolates causing leaf spot on Primula vulgaris.</em>
+</a>
+
+
+Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar.
+Plant Pathology.
+</p>
+<p class="foo indent-8">2017.
+
+
+<a href="https://www.sipav.org/en/16/Archive/3858">
+  <em>First report of leaf spot caused by Colletotrichum coccodes on Viola tricolor in Iran.</em>
+</a>
+
+
+T. Karamnejadi, A. Solhizadeh, O. Shenavar, M.A. Tajick-Ghanbari.
+Journal of Plant Pathology.
+</p>
+<p class="foo indent-8">2015.
+
+
+<a href="http://yujs.yu.ac.ir/pps/article-1-90-en.html">
+  <em>Computerized Interactive Keys for Identification of Fungi.</em>
+</a>
+
+
+Omid Shenavar, Mostowfizadeh-Ghalamfarsa Reza.
+Plant Pathology Science.
+</p>
+
+
+<h4 style="text-decoration: underline;">Conference Papers</h4><p class="foo indent-8">2022.
+
+
+<a href="https://24ippc.areeo.ac.ir/paper?manu=8328">
+  <em>Multi Locus Sequence Analysis of Candidatus liberibacter asiaticus Isolates in Iran.</em>
+</a>
+
+
+Siavash Samavi, Mohammad Mehdi Faghihi, Abdolnabi Bagheri, Valiollah Babaeizad, Omid Shenavar, Mohsen Amiri Mazraie.
+24th Iranian Plant Protection Congress.
+</p>
+<p class="foo indent-8">2018.
+
+
+<a href="https://civilica.com/doc/755249">
+  <em>Investigation of Pathogenicity and Molecular Characteristics of Staphylococcus Strains Causing Bacterial Canker in Central Iran.</em>
+</a>
+
+
+Esmaeil Asadi, Heshmatolah Rahimian, Omid Shenavar, Valiollah Babaeizad, S. Mohamad Alavi.
+Proceedings of the International Congress of Science and Engineering.
+</p>
+<p class="foo indent-8">2018.
+
+
+<a href="https://civilica.com/doc/755250">
+  <em>Isolation, Identification, and Phenotypic-Biochemical Characterization of Staphylococcus warneri Strains, the Causative Agents of Bacterial Canker in Iran.</em>
+</a>
+
+
+Esmaeil Asadi, Heshmatolah Rahimian, Omid Shenavar, Valiollah Babaeizad, S. Mohamad Alavi.
+Proceedings of the International Congress of Science and Engineering.
+</p>
+<p class="foo indent-8">2017.
+
+
+<a href="https://civilica.com/doc/673977">
+  <em>Phenotypic, Molecular, and Pathogenicity Investigation of Xanthomonas Strains Causing Primula Leaf Spot.</em>
+</a>
+
+
+Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar.
+First International Symposium on Applied Research in Agricultural Sciences, Natural Resources, and Environment.
+</p>
+<p class="foo indent-8">2017.
+
+
+<a href="https://civilica.com/doc/673976">
+  <em>Molecular Identification and Taxonomic Position of Xanthomonas Strains Causing Bacterial Leaf Spot in Primula Based on gltA Gene Sequence Analysis.</em>
+</a>
+
+
+Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar.
+First International Symposium on Applied Research in Agricultural Sciences, Natural Resources, and Environment.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills and Languages</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Molecular Phylogeny</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Bioinformatics &amp; MLSA</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Pathogenicity Assays</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Laboratory Techniques (PCR, DNA/Protein Extraction)</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Python &amp; R Programming</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="60% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Linux &amp; Open Source</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Scientific Writing &amp; Editing</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="85% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Project Management &amp; Leadership</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>English (IELTS 7.5)</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies and Interests</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+    <li class="list-unstyled mb-2">
+      <i class="fas fa-dumbbell"></i> Physical Fitness (Gym)
+    </li>
+  
+    <li class="list-unstyled mb-2">
+      <i class="fas fa-film"></i> Cinema and Movies
+    </li>
+  
+    <li class="list-unstyled mb-2">
+      <i class="fas fa-book"></i> Reading Books (Favorite: A Fraction of the Whole by Steve Toltz)
+    </li>
+  
+    <li class="list-unstyled mb-2">
+      <i class="fab fa-fedora"></i> Linux Enthusiast (Fedora)
+    </li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-envelope"></i>
+          Contact Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+    <i class="fas fa-envelope me-2"></i>
+    Feel free to reach out via email: <a href="mailto:shenavar.omid@gmail.com"><!-- raw HTML omitted --><!-- raw HTML omitted --> shenavar.omid@gmail.com</a>
+  </p></div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-download"></i>
+          Download my CV</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  <i class="fas fa-download"></i>
+  Download my up-to-date CV here: <a href="/cv/CV.pdf">Download CV (PDF)</a>
+</p>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>

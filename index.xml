@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://omidshenavar.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://omidshenavar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ganjine Plasmoid</title>
+      <link>https://omidshenavar.github.io/apps/ganjine-plasmoid/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/ganjine-plasmoid/</guid>
+      <description>Description A KDE Plasma widget that displays random Persian poems from ganjoor.net. Originally a Cinnamon desklet by Mohammad S., ported to KDE Plasma. Features configurable refresh intervals, poet selection, customizable appearance, history navigation, and poem sharing.&#xA;Technologies Qt JavaScript Plasma Framework Link GitHub</description>
+    </item>
+    <item>
+      <title>Special Medicine Management</title>
+      <link>https://omidshenavar.github.io/apps/special-medicine-management/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/special-medicine-management/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A C# application for managing special medicine records in pharmacies. Features Persian date picker, auto-complete, SQLite storage, advanced search, and Excel export with RTL support.&#xA;Technologies .NET Windows Forms SQLite ClosedXML </description>
+    </item>
+    <item>
+      <title>Drug Insurance Status Checker</title>
+      <link>https://omidshenavar.github.io/apps/drug-insurance-checker/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/drug-insurance-checker/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A Python app for checking drug insurance status in Naft and Janbaz databases, displaying details like drug name and insurance status.&#xA;Technologies Tkinter SQLite ttkbootstrap </description>
+    </item>
+    <item>
+      <title>Grade Viewer V 0.1</title>
+      <link>https://omidshenavar.github.io/apps/grade-viewer/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/grade-viewer/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A simple Python app for viewing grades from an online Excel file. Includes user login, grade display, and logout functionality.&#xA;Technologies PyQt5 Pandas Requests </description>
+    </item>
+    <item>
+      <title>Invoice Management System</title>
+      <link>https://omidshenavar.github.io/apps/invoice-management-system/</link>
+      <pubDate>Wed, 17 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/apps/invoice-management-system/</guid>
+      <description>&#xD;Your browser does not support the video tag. Description A Python-based application for Dr. Ghasemi’s Pharmacy to streamline invoice handling. Features include adding invoices with a Persian calendar, auto-complete for company names, database storage, advanced search, and Excel export.&#xA;Technologies PyQt5 SQLite3 Pandas Openpyxl Numpy </description>
+    </item>
+    <item>
+      <title>Contact Me</title>
+      <link>https://omidshenavar.github.io/contactme/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/contactme/</guid>
+      <description>Contact Me Feel free to reach out to me via email at shenavar.omid@gmail.com.</description>
+    </item>
+    <item>
+      <title>Professor Rahimian</title>
+      <link>https://omidshenavar.github.io/testimonials/profrahimian/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/testimonials/profrahimian/</guid>
+      <description>It is a pleasure to recommend such a distinguished individual as Mr. Omid Shenavar for graduate studies toward a Ph.D. degree. I have known Mr. Shenavar for seven years, since his admission to the MS program in Plant Pathology at Sari Agricultural Science and Natural Resources University (SANRU). He has been a student of mine in the plant pathogenic bacteria course, in which he ranked in the top five percent of over 160 students I have taught at SANRU and the University of Tehran, in the past 33 years.</description>
+    </item>
+    <item>
+      <title>Who am I?</title>
+      <link>https://omidshenavar.github.io/blog/bio/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://omidshenavar.github.io/blog/bio/</guid>
+      <description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;&#xA;&lt;p&gt;Hey there, I&amp;rsquo;m Omid Shenavar, a graduate of Shiraz University with a B.Sc. and SANRU with an M.Sc., where I dove into the fascinating world of plant protection and bacteriology. My studies have really ignited a passion for bacterial taxonomy, phylogeny, and biodiversity. But you know what? My hunger for knowledge in these areas is insatiable—I&amp;rsquo;m always up for learning more and broadening my horizons.&lt;/p&gt;&#xA;&lt;p&gt;From day one, my dream has been to become a bona fide expert in plant bacteriology. That&amp;rsquo;s why I jumped at the chance to continue my studies at SANRU, guided by the legendary Professor Rahimian, a true rockstar in the world of phytobacteriology. Under his mentorship, my passion has only grown, and I&amp;rsquo;m incredibly grateful for his guidance.&lt;/p&gt;&#xA;&lt;p&gt;Now, I&amp;rsquo;m on a mission to snag a Ph.D. spot in plant bacteriology. My goal? To shake things up in the world of plant science with my research and expertise. I&amp;rsquo;m dead set on making an impact, and I won&amp;rsquo;t rest until I&amp;rsquo;ve reached the top of my game.&lt;/p&gt;&#xA;&lt;p&gt;And hey, wanna see how determined I am? Check out these pics. The one from 2017? That&amp;rsquo;s where I started. But with some serious dedication and hard work, I&amp;rsquo;ve managed to shed over 50 kilograms. Talk about a transformation, right?&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://omidshenavar.github.io/images/beforeandnow.jpg&#34; alt=&#34;My Transformation&#34;&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:shenavar.omid@gmail.com&#34;&gt;&lt;img src=&#34;https://img.icons8.com/fluency/48/000000/gmail.png&#34; alt=&#34;Email&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
