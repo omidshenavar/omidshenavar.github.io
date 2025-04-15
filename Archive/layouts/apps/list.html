@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="prose dark:prose-invert max-w-none">
+    <h1 class="standard">Apps</h1>
+    {{ range .Pages }}
+    <div class="app-item">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+        <p class="text-sm">Published: {{ .Date.Format "January 2, 2006" }}</p>
+        {{ if .Params.categories }}
+        <p class="text-sm">Categories:
+            {{ range .Params.categories }}
+            <a href="/categories/{{ . | urlize }}">#{{ . }}</a>
+            {{ end }}
+        </p>
+        {{ end }}
+        {{ if .Params.tags }}
+        <p class="text-sm">Tags:
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
+            {{ end }}
+        </p>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

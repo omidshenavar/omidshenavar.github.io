@@ -120,10 +120,6 @@ p {
   cursor: pointer;
 }
 
-.testimonial-image img:active {
-  max-width: 100%;
-}
-
 .testimonial-text {
   font-family: 'Alegreya', serif;
   text-align: justify;
@@ -141,29 +137,103 @@ p {
   margin-right: 5px;
   line-height: 1;
 }
+.app-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+}
 
-/* Custom CSS for responsive menu */
-@media (min-width: 768px) {
+.app-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-item h2 {
+  margin-top: 0;
+}
+.app-item video {
+  max-width: 100%;
+}
+.dark .app-item {
+  border-color: #4b5563;
+  background-color: #1f2937;
+}
+.app-item a {
+  @apply text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 767px) {
   #nav-links {
-    display: flex !important;
+  flex-direction: column;
+  width: 16rem; /* 64 in Tailwind */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   }
-  #menu-toggle {
-    display: none !important;
+  #nav-links a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  }
+  .dark #nav-links a {
+    border-bottom: 1px solid #4b5563;
+  }
+  #menu-close {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #e5e7eb;
+  }
+  .dark #menu-close {
+    border-bottom: 1px solid #4b5563;
   }
 }
 
-@media (max-width: 767px) {
-  #nav-links.hidden {
-    display: none !important;
-  }
+@media (min-width: 768px) {
   #nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex !important;
+  transform: none !important;
   }
-  #nav-links a {
-    display: block;
-    width: 100%;
-    text-align: center;
+  #menu-toggle, #menu-close {
+  display: none !important;
+  }
+}
+
+/* Modal Styles */
+#image-modal {
+transition: opacity 0.3s ease-in-out;
+}
+
+#image-modal.hidden {
+opacity: 0;
+pointer-events: none;
+}
+
+#image-modal.flex {
+opacity: 1;
+pointer-events: auto;
+}
+
+#modal-image {
+border: 2px solid #ddd;
+border-radius: 0.5rem;
+}
+
+#modal-close svg {
+stroke: white;
+}
+
+@media (max-width: 767px) {
+  #image-modal {
+  padding: 1rem;
+  }
+  #modal-image {
+  max-height: 70vh;
   }
 }

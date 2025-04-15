@@ -2,12 +2,53 @@
 {{ if eq .Type "testimonials" }}
 <div class="testimonial-container">
     <div class="testimonial-text">
-        <p>{{ .Content }}</p>
+        {{ .Content }}
     </div>
     <div class="testimonial-image">
-        <img src="/images/testimonial-letter.jpg" alt="Testimonial Letter">
+        <img src="/images/testimonial-letter.jpg" alt="Testimonial Letter" class="cursor-pointer" onclick="toggleModal(this)">
     </div>
 </div>
+
+<!-- Modal for Full-Screen Image -->
+<div id="image-modal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+    <div class="relative max-w-4xl w-full p-4">
+        <img id="modal-image" src="" alt="Testimonial Letter" class="w-full h-auto max-h-[80vh] object-contain">
+        <button id="modal-close" class="absolute top-2 right-2 text-white bg-gray-800 rounded-full p-2 hover:bg-gray-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script>
+function toggleModal(imgElement) {
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalClose = document.getElementById('modal-close');
+
+    // Set the image source for the modal
+    modalImage.src = imgElement.src;
+
+    // Toggle modal visibility
+    modal.classList.toggle('hidden');
+    modal.classList.toggle('flex');
+
+    // Close modal on button click
+    modalClose.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    });
+
+    // Close modal on click outside the image
+    modal.addEventListener('click', (e) => {
+        if (!modalImage.contains(e.target) && !modalClose.contains(e.target)) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    });
+}
+</script>
 {{ else }}
 <div class="prose prose-stone dark:prose-invert max-w-none">
     <div class="mb-3">

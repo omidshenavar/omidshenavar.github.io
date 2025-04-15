@@ -1,4 +1,4 @@
 ---
 title: "Apps"
-weight: 80
 ---
+Browse my collection of applications.
