@@ -111,6 +111,12 @@ params:
       - Journal Articles
       - Conference Papers
     list:
+      - title: "Leaf Spot and Stem Canker of Pistachio Trees Incited by Xanthomonas Strains"
+        authors: "Maryam Khorasani, Akbar Hosseinipour, Omid Shenavar, Heshmat Rahimian"
+        date: "May 2025"
+        journal: "Journal of Phytopathology"
+        url: "https://doi.org/10.1111/jph.70078"
+        type: Journal Articles      
       - title: "Characterization of Xanthomonas hortorum isolates causing leaf spot on Primula vulgaris"
         authors: "Omid Shenavar, Heshmatolah Rahimian, Ali Barzegar"
         date: "July 2023"
