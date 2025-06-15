@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on </title>
+    <link>http://localhost:1313/tags/c%23/</link>
+    <description>Recent content in C# on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pharmacy Doctor Salary Calculator</title>
+      <link>http://localhost:1313/apps/pharmacy-salary-calculator/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apps/pharmacy-salary-calculator/</guid>
+      <description>&#xD;Your browser does not support the video tag.&#xD;Description A C# application for calculating salaries of pharmacy doctors (Responsible Doctor and Deputy roles). Features include Persian date handling, dynamic lawful hours calculation, customizable settings, and detailed salary breakdowns with support for night shifts, holidays, and overtime.&#xA;Technologies .NET WPF System.Text.Json (for settings persistence) PersianCalendar (for Persian date handling) </description>
+    </item>
+    <item>
+      <title>Special Medicine Management</title>
+      <link>http://localhost:1313/apps/special-medicine-management/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apps/special-medicine-management/</guid>
+      <description>&#xD;Your browser does not support the video tag.&#xD;Description A C# application for managing special medicine records in pharmacies. Features Persian date picker, auto-complete, SQLite storage, advanced search, and Excel export with RTL support.&#xA;Technologies .NET Windows Forms SQLite ClosedXML </description>
+    </item>
+  </channel>
+</rss>

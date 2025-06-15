@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omid Shenavar – Introductory Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      color: #00bfa6;
+    }
+
+    video {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    video:hover {
+      transform: scale(1.01);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      video {
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Omid Shenavar – Introductory Video</h1>
+
+  <video controls>
+    <source src="/videos/Introduction_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</body>
+</html>
