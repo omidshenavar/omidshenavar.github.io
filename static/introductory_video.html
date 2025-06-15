@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omid Shenavar – Introductory Video</title>
   <style>
     body {
@@ -33,6 +33,7 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
       transition: transform 0.3s ease;
+      background-color: black;
     }
 
     video:hover {
@@ -54,9 +55,11 @@
 
   <h1>Omid Shenavar – Introductory Video</h1>
 
-  <video controls>
+  <video controls playsinline preload="metadata" poster="/videos/poster.jpg">
     <source src="/videos/Introduction_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="/videos/Introduction_video.webm" type="video/webm">
+    <source src="/videos/Introduction_video.ogv" type="video/ogg">
+    Your browser does not support HTML5 video. Please try a modern browser like Chrome, Firefox, or Safari.
   </video>
 
 </body>
