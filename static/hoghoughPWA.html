@@ -1,30 +1,9 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    </script>
-</body>
-</html><meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محاسبه‌گر حقوق مسئول فنی</title>
-    
-    <!-- PWA Meta Tags -->
-    <meta name="description" content="سیستم محاسبه حقوق و دستمزد مسئول فنی">
-    <meta name="theme-color" content="#667eea">
-    
-    <!-- iOS Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="حقوق مسئول فنی">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💰</text></svg>">
-    
-    <!-- Apple Touch Icons (inline as data URIs) -->
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' fill='%23667eea' rx='40'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'>💰</text></svg>">
-    
-    <!-- Web App Manifest (inline) -->
-    <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87%E2%80%8C%DA%AF%D8%B1%20%D8%AD%D9%82%D9%88%D9%82%20%D9%85%D8%B3%D8%A6%D9%88%D9%84%20%D9%81%D9%86%DB%8C%22%2C%22short_name%22%3A%22%D8%AD%D9%82%D9%88%D9%82%22%2C%22description%22%3A%22%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%20%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87%20%D8%AD%D9%82%D9%88%D9%82%20%D9%88%20%D8%AF%D8%B3%D8%AA%D9%85%D8%B2%D8%AF%22%2C%22start_url%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23667eea%22%2C%22theme_color%22%3A%22%23667eea%22%2C%22orientation%22%3A%22portrait%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20192%20192%27%3E%3Crect%20width%3D%27192%27%20height%3D%27192%27%20fill%3D%27%2523667eea%27%20rx%3D%2740%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20dominant-baseline%3D%27middle%27%20text-anchor%3D%27middle%27%20font-size%3D%2790%27%20fill%3D%27white%27%3E%F0%9F%92%B0%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20fill%3D%27%2523667eea%27%20rx%3D%27100%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20dominant-baseline%3D%27middle%27%20text-anchor%3D%27middle%27%20font-size%3D%27240%27%20fill%3D%27white%27%3E%F0%9F%92%B0%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
-    
+    <title>محاسبه‌گر حقوق</title>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
         * {
@@ -397,35 +376,11 @@
             display: flex;
         }
 
-        .install-prompt {
-            background: #4299e1;
-            color: white;
-            padding: 15px 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            display: none;
-            align-items: center;
-            justify-content: space-between;
-            gap: 15px;
-        }
-
-        .install-prompt.show {
-            display: flex;
-        }
-
-        .install-prompt button {
-            background: white;
-            color: #4299e1;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 13px;
-        }
-
         @media print {
             body {
                 background: white;
             }
-            .buttons, .modal, .section:not(.salary-receipt), .export-buttons, .install-prompt {
+            .buttons, .modal, .section:not(.salary-receipt), .export-buttons {
                 display: none !important;
             }
             .salary-receipt {
@@ -462,12 +417,6 @@
         </div>
 
         <div class="content">
-            <!-- Install Prompt for PWA -->
-            <div class="install-prompt" id="installPrompt">
-                <span>📱 این برنامه را به صفحه اصلی گوشی خود اضافه کنید</span>
-                <button onclick="installApp()">نصب</button>
-            </div>
-
             <div class="buttons">
                 <button class="btn-primary" onclick="openSettings()">⚙️ تنظیمات مقادیر ثابت</button>
                 <button class="btn-secondary" onclick="calculate()">محاسبه</button>
@@ -702,42 +651,6 @@
     <script>
         let calculatedLeave = 0;
         let savedPreviousLeave = null;
-        let deferredPrompt;
-
-        // PWA Install functionality
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            document.getElementById('installPrompt').classList.add('show');
-        });
-
-        function installApp() {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('App installed');
-                    }
-                    deferredPrompt = null;
-                    document.getElementById('installPrompt').classList.remove('show');
-                });
-            }
-        }
-
-        // Register Service Worker for offline functionality
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('data:text/javascript;charset=utf-8,' + encodeURIComponent(`
-                    const CACHE_NAME = 'salary-calc-v1';
-                    self.addEventListener('install', (event) => {
-                        self.skipWaiting();
-                    });
-                    self.addEventListener('activate', (event) => {
-                        event.waitUntil(clients.claim());
-                    });
-                `)).catch(err => console.log('SW registration failed'));
-            });
-        }
 
         // Load saved settings on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -747,13 +660,13 @@
         function loadSettings() {
             const settings = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9'];
             settings.forEach(key => {
-                const saved = localStorage.getItem('salary_calc_' + key);
+                const saved = localStorage.getItem(key);
                 if (saved) {
                     document.getElementById(key).value = saved;
                 }
             });
             
-            const previousLeave = localStorage.getItem('salary_calc_previousLeave');
+            const previousLeave = localStorage.getItem('previousLeave');
             if (previousLeave) {
                 savedPreviousLeave = parseFloat(previousLeave);
                 document.getElementById('savedLeave').value = previousLeave;
@@ -793,12 +706,13 @@
         function saveSettings() {
             const settings = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9'];
             settings.forEach(key => {
-                localStorage.setItem('salary_calc_' + key, document.getElementById(key).value);
+                localStorage.setItem(key, document.getElementById(key).value);
             });
             
+            // Save the manually adjusted leave value if provided
             const savedLeaveInput = document.getElementById('savedLeave').value;
             if (savedLeaveInput !== '') {
-                localStorage.setItem('salary_calc_previousLeave', savedLeaveInput);
+                localStorage.setItem('previousLeave', savedLeaveInput);
                 savedPreviousLeave = parseFloat(savedLeaveInput);
             }
             
@@ -811,7 +725,7 @@
         }
 
         function saveLeave() {
-            localStorage.setItem('salary_calc_previousLeave', calculatedLeave.toFixed(1));
+            localStorage.setItem('previousLeave', calculatedLeave.toFixed(1));
             savedPreviousLeave = calculatedLeave;
             document.getElementById('savedLeave').value = calculatedLeave.toFixed(1);
             alert('باقیمانده مرخصی با موفقیت ذخیره شد و در محاسبات بعدی استفاده خواهد شد.');
@@ -841,13 +755,23 @@
             const F10 = F9 < B1 ? (B1 - F9) : 0;
             const F11_raw = F10 / B8;
             
+            // G11 is previous month's remaining leave (or B9 if no saved record)
             const G11 = savedPreviousLeave !== null ? savedPreviousLeave : B9;
+            
+            // کسر کار روزانه after subtracting from باقیمانده مرخصی
             const F11 = Math.max(0, F11_raw - G11);
+            
             const F13 = F9 > B1 ? 2.5 : (F9 / B1) * 2.5;
+            
+            // تعدیل با مرخصی = previous leave - daily deduction (before applying leave)
             const F12 = G11 - F11_raw;
+            
+            // باقیمانده مرخصی = تعدیل + earned leave
             const F14 = F12 + F13;
+            
             const F15 = F9 > B1 ? F9 : B1;
 
+            // Update receipt
             document.getElementById('displayYear').textContent = year;
             document.getElementById('displayMonth').textContent = getMonthName(month);
             document.getElementById('displayTotalHours').textContent = F2 + ' ساعت';
@@ -868,6 +792,7 @@
             document.getElementById('receiptArea').classList.add('active');
             document.getElementById('exportButtons').classList.add('active');
 
+            // Show leave dialog
             calculatedLeave = F14;
             document.getElementById('newLeaveValue').textContent = F14.toFixed(1);
             document.getElementById('leaveModal').classList.add('active');
@@ -902,3 +827,6 @@
                 link.click();
             });
         }
+    </script>
+</body>
+</html>
