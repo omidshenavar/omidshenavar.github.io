@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    </script>
+</body>
+</html><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه‌گر حقوق مسئول فنی</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="سیستم محاسبه حقوق و دستمزد مسئول فنی">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="حقوق مسئول فنی">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💰</text></svg>">
+    
+    <!-- Apple Touch Icons (inline as data URIs) -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' fill='%23667eea' rx='40'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'>💰</text></svg>">
+    
+    <!-- Web App Manifest (inline) -->
+    <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87%E2%80%8C%DA%AF%D8%B1%20%D8%AD%D9%82%D9%88%D9%82%20%D9%85%D8%B3%D8%A6%D9%88%D9%84%20%D9%81%D9%86%DB%8C%22%2C%22short_name%22%3A%22%D8%AD%D9%82%D9%88%D9%82%22%2C%22description%22%3A%22%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%20%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87%20%D8%AD%D9%82%D9%88%D9%82%20%D9%88%20%D8%AF%D8%B3%D8%AA%D9%85%D8%B2%D8%AF%22%2C%22start_url%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23667eea%22%2C%22theme_color%22%3A%22%23667eea%22%2C%22orientation%22%3A%22portrait%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20192%20192%27%3E%3Crect%20width%3D%27192%27%20height%3D%27192%27%20fill%3D%27%2523667eea%27%20rx%3D%2740%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20dominant-baseline%3D%27middle%27%20text-anchor%3D%27middle%27%20font-size%3D%2790%27%20fill%3D%27white%27%3E%F0%9F%92%B0%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20fill%3D%27%2523667eea%27%20rx%3D%27100%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20dominant-baseline%3D%27middle%27%20text-anchor%3D%27middle%27%20font-size%3D%27240%27%20fill%3D%27white%27%3E%F0%9F%92%B0%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
+    
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #38a169;
+            transform: translateY(-2px);
+        }
+
+        .btn-export {
+            background: #ed8936;
+            color: white;
+        }
+
+        .btn-export:hover {
+            background: #dd6b20;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 12px;
+            border-right: 4px solid #667eea;
+        }
+
+        .section h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            background: #e53e3e;
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            padding: 0;
+        }
+
+        .close-btn:hover {
+            background: #c53030;
+        }
+
+        /* فیش حقوقی - Black & White */
+        .salary-receipt {
+            display: none;
+            background: white;
+            border: 3px solid #000;
+            padding: 0;
+            margin-top: 20px;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        .salary-receipt.active {
+            display: block;
+        }
+
+        .receipt-header {
+            background: #000;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 4px solid #333;
+        }
+
+        .receipt-header h2 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .receipt-header p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .receipt-body {
+            padding: 30px;
+        }
+
+        .receipt-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #666;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .info-value {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .receipt-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .receipt-table th {
+            background: #e0e0e0;
+            padding: 12px;
+            text-align: right;
+            font-weight: bold;
+            border: 2px solid #000;
+            color: #000;
+        }
+
+        .receipt-table td {
+            padding: 10px 12px;
+            border: 1px solid #666;
+            text-align: right;
+            color: #000;
+        }
+
+        .receipt-table tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        .total-section {
+            background: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #000;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .total-row:not(:last-child) {
+            border-bottom: 1px solid #666;
+        }
+
+        .total-label {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .total-value {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .receipt-footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .signature-box {
+            text-align: center;
+        }
+
+        .signature-line {
+            border-top: 2px solid #000;
+            margin-top: 60px;
+            padding-top: 10px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .leave-highlight {
+            background: #f0f0f0;
+            border: 2px solid #000;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .leave-info {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .leave-item {
+            flex: 1;
+        }
+
+        .leave-item .label {
+            font-size: 0.9em;
+            color: #000;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .leave-item .value {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .export-buttons {
+            display: none;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .export-buttons.active {
+            display: flex;
+        }
+
+        .install-prompt {
+            background: #4299e1;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .install-prompt.show {
+            display: flex;
+        }
+
+        .install-prompt button {
+            background: white;
+            color: #4299e1;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .buttons, .modal, .section:not(.salary-receipt), .export-buttons, .install-prompt {
+                display: none !important;
+            }
+            .salary-receipt {
+                display: block !important;
+                border: 2px solid #000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .receipt-info {
+                grid-template-columns: 1fr;
+            }
+            .receipt-footer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .dialog-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .dialog-buttons button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>حقوق مسئول فنی</h1>
+            <p>سیستم محاسبه حقوق و دستمزد</p>
+        </div>
+
+        <div class="content">
+            <!-- Install Prompt for PWA -->
+            <div class="install-prompt" id="installPrompt">
+                <span>📱 این برنامه را به صفحه اصلی گوشی خود اضافه کنید</span>
+                <button onclick="installApp()">نصب</button>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-primary" onclick="openSettings()">⚙️ تنظیمات مقادیر ثابت</button>
+                <button class="btn-secondary" onclick="calculate()">محاسبه</button>
+            </div>
+
+            <div class="section">
+                <h2>اطلاعات ماه</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>سال (شمسی)</label>
+                        <input type="number" id="year" value="1404">
+                    </div>
+                    <div class="form-group">
+                        <label>ماه</label>
+                        <select id="month">
+                            <option value="1">فروردین</option>
+                            <option value="2">اردیبهشت</option>
+                            <option value="3">خرداد</option>
+                            <option value="4">تیر</option>
+                            <option value="5">مرداد</option>
+                            <option value="6">شهریور</option>
+                            <option value="7">مهر</option>
+                            <option value="8">آبان</option>
+                            <option value="9">آذر</option>
+                            <option value="10">دی</option>
+                            <option value="11">بهمن</option>
+                            <option value="12">اسفند</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>کل ساعات کارکرد</label>
+                        <input type="number" id="totalHours" value="151" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label>فوق (ساعات کار در تعطیلات)</label>
+                        <input type="number" id="holidayHours" value="36" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label>روزهای تعطیل ماه</label>
+                        <input type="number" id="holidays" value="11">
+                    </div>
+                </div>
+            </div>
+
+            <div class="salary-receipt" id="receiptArea">
+                <div class="receipt-header">
+                    <h2>فیش حقوقی</h2>
+                    <p>برگ پرداخت حقوق و مزایا - حقوق مسئول فنی</p>
+                </div>
+
+                <div class="receipt-body">
+                    <div class="receipt-info">
+                        <div class="info-item">
+                            <span class="info-label">سال:</span>
+                            <span class="info-value" id="displayYear">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">ماه:</span>
+                            <span class="info-value" id="displayMonth">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">کل ساعات:</span>
+                            <span class="info-value" id="displayTotalHours">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">ساعات تعطیل:</span>
+                            <span class="info-value" id="displayHolidayHours">-</span>
+                        </div>
+                    </div>
+
+                    <table class="receipt-table">
+                        <thead>
+                            <tr>
+                                <th>شرح</th>
+                                <th>مبلغ / مقدار</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ساعت قانونی</td>
+                                <td id="recLegalHours">-</td>
+                            </tr>
+                            <tr>
+                                <td>کارکرد عادی</td>
+                                <td id="recNormalWork">-</td>
+                            </tr>
+                            <tr>
+                                <td>اضافه کاری</td>
+                                <td id="recOvertime">-</td>
+                            </tr>
+                            <tr>
+                                <td>تعطیل کاری</td>
+                                <td id="recHolidayWork">-</td>
+                            </tr>
+                            <tr>
+                                <td>کسر کار ریالی</td>
+                                <td id="recWorkDeduction">-</td>
+                            </tr>
+                            <tr>
+                                <td>کسر کار روزانه</td>
+                                <td id="recDailyDeduction">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="leave-highlight">
+                        <h3 style="text-align:center; margin-bottom:15px; color:#000;">وضعیت مرخصی</h3>
+                        <div class="leave-info">
+                            <div class="leave-item">
+                                <div class="label">تعدیل با مرخصی</div>
+                                <div class="value" id="recLeaveAdjustment">-</div>
+                            </div>
+                            <div class="leave-item">
+                                <div class="label">مرخصی استحقاقی</div>
+                                <div class="value" id="recEarnedLeave">-</div>
+                            </div>
+                            <div class="leave-item">
+                                <div class="label">باقیمانده مرخصی</div>
+                                <div class="value" id="recRemainingLeave">-</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total-section">
+                        <div class="total-row">
+                            <span class="total-label">حقوق نهایی:</span>
+                            <span class="total-value" id="recFinalSalary">-</span>
+                        </div>
+                        <div class="total-row">
+                            <span class="total-label">حقوق خالص پرداختی:</span>
+                            <span class="total-value" id="recNetSalary">-</span>
+                        </div>
+                    </div>
+
+                    <div class="receipt-footer">
+                        <div class="signature-box">
+                            <div class="signature-line">امضا کارمند</div>
+                        </div>
+                        <div class="signature-box">
+                            <div class="signature-line">امضا مسئول مالی</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="export-buttons" id="exportButtons">
+                <button class="btn-export" onclick="exportToPDF()">📄 ذخیره PDF</button>
+                <button class="btn-export" onclick="exportToImage()">🖼️ ذخیره تصویر</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تنظیمات مقادیر ثابت</h2>
+                <button class="close-btn" onclick="closeSettings()">×</button>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>قانون برای شش روز در هفته و ۸ ساعت کار</label>
+                    <input type="number" id="B1" value="610000000">
+                </div>
+                <div class="form-group">
+                    <label>حق تاهل</label>
+                    <input type="number" id="B2" value="5000000">
+                </div>
+                <div class="form-group">
+                    <label>حق اولاد</label>
+                    <input type="number" id="B3" value="10390968">
+                </div>
+                <div class="form-group">
+                    <label>پایه سنوات</label>
+                    <input type="number" id="B4" value="2820000">
+                </div>
+                <div class="form-group">
+                    <label>شب کاری</label>
+                    <input type="number" id="B5" value="2424559.2">
+                </div>
+                <div class="form-group">
+                    <label>تعطیل کاری</label>
+                    <input type="number" id="B6" value="2770924.8">
+                </div>
+                <div class="form-group">
+                    <label>اضافه کار</label>
+                    <input type="number" id="B7" value="2770924.8">
+                </div>
+                <div class="form-group">
+                    <label>مزد روزانه (دوبرابر کارگر)</label>
+                    <input type="number" id="B8" value="6927312">
+                </div>
+                <div class="form-group">
+                    <label>مرخصی اولیه</label>
+                    <input type="number" id="B9" value="50">
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label>باقیمانده مرخصی ذخیره شده (ماه قبل)</label>
+                    <input type="number" id="savedLeave" step="0.1" placeholder="هنوز مقداری ذخیره نشده">
+                </div>
+            </div>
+            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 15px; margin-top: 15px; color: #856404;">
+                <strong>توجه:</strong> این مقدار به صورت خودکار پس از هر محاسبه به‌روزرسانی می‌شود. فقط در صورت نیاز به تصحیح دستی تغییر دهید.
+            </div>
+            <button class="btn-primary" onclick="saveSettings()" style="margin-top: 20px; width: 100%;">ذخیره تنظیمات</button>
+        </div>
+    </div>
+
+    <!-- Leave Save Dialog -->
+    <div class="modal" id="leaveModal">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h2>ذخیره مرخصی</h2>
+                <button class="close-btn" onclick="closeLeaveDialog()">×</button>
+            </div>
+            <p style="margin-bottom: 15px; line-height: 1.8;">
+                باقیمانده مرخصی جدید: <strong id="newLeaveValue" style="color: #667eea; font-size: 1.2em;">-</strong> روز
+            </p>
+            <p style="margin-bottom: 20px; color: #4a5568;">
+                آیا می‌خواهید این مقدار را برای محاسبات بعدی ذخیره کنید؟
+            </p>
+            <div class="dialog-buttons">
+                <button class="btn-primary" onclick="saveLeave()">بله، ذخیره شود</button>
+                <button class="btn-export" onclick="closeLeaveDialog()">خیر</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        let calculatedLeave = 0;
+        let savedPreviousLeave = null;
+        let deferredPrompt;
+
+        // PWA Install functionality
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installPrompt').classList.add('show');
+        });
+
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('App installed');
+                    }
+                    deferredPrompt = null;
+                    document.getElementById('installPrompt').classList.remove('show');
+                });
+            }
+        }
+
+        // Register Service Worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('data:text/javascript;charset=utf-8,' + encodeURIComponent(`
+                    const CACHE_NAME = 'salary-calc-v1';
+                    self.addEventListener('install', (event) => {
+                        self.skipWaiting();
+                    });
+                    self.addEventListener('activate', (event) => {
+                        event.waitUntil(clients.claim());
+                    });
+                `)).catch(err => console.log('SW registration failed'));
+            });
+        }
+
+        // Load saved settings on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            loadSettings();
+        });
+
+        function loadSettings() {
+            const settings = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9'];
+            settings.forEach(key => {
+                const saved = localStorage.getItem('salary_calc_' + key);
+                if (saved) {
+                    document.getElementById(key).value = saved;
+                }
+            });
+            
+            const previousLeave = localStorage.getItem('salary_calc_previousLeave');
+            if (previousLeave) {
+                savedPreviousLeave = parseFloat(previousLeave);
+                document.getElementById('savedLeave').value = previousLeave;
+            }
+        }
+
+        function isLeapYear(year) {
+            const cycle = [1, 5, 9, 13, 17, 22, 26, 30];
+            const yearInCycle = ((year - 1) % 33) + 1;
+            return cycle.includes(yearInCycle);
+        }
+
+        function getDaysInMonth(month, year) {
+            if (month <= 6) return 31;
+            if (month < 12) return 30;
+            return isLeapYear(year) ? 30 : 29;
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('fa-IR').format(Math.round(num)) + ' ریال';
+        }
+
+        function getMonthName(monthNum) {
+            const months = ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 
+                          'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'];
+            return months[monthNum - 1];
+        }
+
+        function openSettings() {
+            document.getElementById('settingsModal').classList.add('active');
+        }
+
+        function closeSettings() {
+            document.getElementById('settingsModal').classList.remove('active');
+        }
+
+        function saveSettings() {
+            const settings = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9'];
+            settings.forEach(key => {
+                localStorage.setItem('salary_calc_' + key, document.getElementById(key).value);
+            });
+            
+            const savedLeaveInput = document.getElementById('savedLeave').value;
+            if (savedLeaveInput !== '') {
+                localStorage.setItem('salary_calc_previousLeave', savedLeaveInput);
+                savedPreviousLeave = parseFloat(savedLeaveInput);
+            }
+            
+            alert('تنظیمات با موفقیت ذخیره شد');
+            closeSettings();
+        }
+
+        function closeLeaveDialog() {
+            document.getElementById('leaveModal').classList.remove('active');
+        }
+
+        function saveLeave() {
+            localStorage.setItem('salary_calc_previousLeave', calculatedLeave.toFixed(1));
+            savedPreviousLeave = calculatedLeave;
+            document.getElementById('savedLeave').value = calculatedLeave.toFixed(1);
+            alert('باقیمانده مرخصی با موفقیت ذخیره شد و در محاسبات بعدی استفاده خواهد شد.');
+            closeLeaveDialog();
+        }
+
+        function calculate() {
+            const B1 = parseFloat(document.getElementById('B1').value);
+            const B6 = parseFloat(document.getElementById('B6').value);
+            const B7 = parseFloat(document.getElementById('B7').value);
+            const B8 = parseFloat(document.getElementById('B8').value);
+            const B9 = parseFloat(document.getElementById('B9').value);
+
+            const year = parseInt(document.getElementById('year').value);
+            const month = parseInt(document.getElementById('month').value);
+            const F2 = parseFloat(document.getElementById('totalHours').value);
+            const F3 = parseFloat(document.getElementById('holidayHours').value);
+            const F4 = parseInt(document.getElementById('holidays').value);
+
+            const daysInMonth = getDaysInMonth(month, year);
+            const F5 = (daysInMonth - F4) * 7.33;
+
+            const F6 = F2 > F5 ? B1 : ((F2 / F5) * B1);
+            const F7 = F2 > F5 ? ((F2 - F5) * B7) : 0;
+            const F8 = F3 * B6;
+            const F9 = F6 + F7 + F8;
+            const F10 = F9 < B1 ? (B1 - F9) : 0;
+            const F11_raw = F10 / B8;
+            
+            const G11 = savedPreviousLeave !== null ? savedPreviousLeave : B9;
+            const F11 = Math.max(0, F11_raw - G11);
+            const F13 = F9 > B1 ? 2.5 : (F9 / B1) * 2.5;
+            const F12 = G11 - F11_raw;
+            const F14 = F12 + F13;
+            const F15 = F9 > B1 ? F9 : B1;
+
+            document.getElementById('displayYear').textContent = year;
+            document.getElementById('displayMonth').textContent = getMonthName(month);
+            document.getElementById('displayTotalHours').textContent = F2 + ' ساعت';
+            document.getElementById('displayHolidayHours').textContent = F3 + ' ساعت';
+
+            document.getElementById('recLegalHours').textContent = F5.toFixed(1) + ' ساعت';
+            document.getElementById('recNormalWork').textContent = formatNumber(F6);
+            document.getElementById('recOvertime').textContent = formatNumber(F7);
+            document.getElementById('recHolidayWork').textContent = formatNumber(F8);
+            document.getElementById('recWorkDeduction').textContent = formatNumber(F10);
+            document.getElementById('recDailyDeduction').textContent = F11_raw.toFixed(2) + ' روز';
+            document.getElementById('recLeaveAdjustment').textContent = F12.toFixed(1);
+            document.getElementById('recEarnedLeave').textContent = F13.toFixed(1);
+            document.getElementById('recRemainingLeave').textContent = F14.toFixed(1);
+            document.getElementById('recFinalSalary').textContent = formatNumber(F9);
+            document.getElementById('recNetSalary').textContent = formatNumber(F15);
+
+            document.getElementById('receiptArea').classList.add('active');
+            document.getElementById('exportButtons').classList.add('active');
+
+            calculatedLeave = F14;
+            document.getElementById('newLeaveValue').textContent = F14.toFixed(1);
+            document.getElementById('leaveModal').classList.add('active');
+        }
+
+        function exportToPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById('receiptArea');
+            
+            html2canvas(element, { scale: 2 }).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                const imgWidth = 210;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                const year = document.getElementById('year').value;
+                const month = document.getElementById('month').options[document.getElementById('month').selectedIndex].text;
+                pdf.save(`فیش_حقوقی_${year}_${month}.pdf`);
+            });
+        }
+
+        function exportToImage() {
+            const element = document.getElementById('receiptArea');
+            
+            html2canvas(element, { scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                const year = document.getElementById('year').value;
+                const month = document.getElementById('month').options[document.getElementById('month').selectedIndex].text;
+                link.download = `فیش_حقوقی_${year}_${month}.png`;
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        }
