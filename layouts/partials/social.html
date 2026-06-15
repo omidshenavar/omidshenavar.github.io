@@ -1,10 +1,27 @@
 <h1 class="mb-0">{{ .Site.Params.profile.name }}</h1>
-<h2 class="mb-0">{{ .Site.Params.profile.tagline }}</h2>
-<h3 class="mb-4">{{ .Site.Params.profile.location }}</h3>
+
+<h2 class="mb-1">
+  PhD Student in Plant Pathology
+</h2>
+
+<h3 class="mb-0">
+  Federal University of Viçosa (UFV)
+</h3>
+
+<h4 class="mb-4">
+  {{ .Site.Params.profile.location }}
+</h4>
+
+<div class="mb-3 text-center">
+  Research Interests:
+  <br>
+  Plant Bacteriology • Bioinformatics • Evolution • Host Adaptation
+</div>
+
 <div class="mb-4 flex flex-wrap justify-center">
   {{ range.Site.Params.social.list }}
   <div class="mx-2">
-    <a class="text-2xl" href="{{ .url }}">
+    <a class="text-2xl" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
       <i class="mt-1 {{ .icon }}"></i>
     </a>
   </div>
